@@ -54,7 +54,7 @@ ul {
   .header-link:hover, .header-link:focus, .header-link:active {
     cursor: pointer;
     color: #FFD166;
-    transition-duration: 0.5s;
+    transition: 0.5s;
   }
   
 /* navigation style end */
@@ -80,7 +80,7 @@ ul {
     display: flex;
     justify-content: center;
     margin: 0;
-    padding: 20px;
+    padding: 30px;
     font-family: 'Cabin Sketch', cursive;
     line-height: 40px;
     font-weight: 700;
@@ -94,11 +94,16 @@ ul {
 
   .banner-text {
     max-width: fit-content;
-    padding: 20px;
-    background-color: #F5F3F6;
+    padding: 30px;
+    color: #F5F3F6;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #26877F;
     border: 5px double #26877F;
+    border-radius: 15px;
   }
-
 
   .articles {
     display: flex;
@@ -107,6 +112,7 @@ ul {
 
   article {
     flex: 1;
+    position: relative;
     padding: 20px;
     max-width: 450px;
     background-color: #F5F3F6;
@@ -116,6 +122,25 @@ ul {
   article:hover {
     box-shadow: 5px 5px 5px #5d817e;
   }
+
+  .button {
+    position: absolute;
+    right: 15px;
+    bottom: -15px;
+    width: 150px;
+    color: #F5F3F6;
+    font-size: 20px;
+    line-height: 40px;
+    background-color: #26877F;
+    border: none;
+  } 
+
+.button:hover, .button:focus, .button:active {
+  cursor: pointer;
+  transition: 0.5s;
+  color: #0C120C;
+  background-color: #FFD166;
+}
 
 /* main style end */
 
